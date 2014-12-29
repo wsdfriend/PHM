@@ -1,0 +1,9 @@
+#==================================================================
+#函数名称_绘制3D三点图_
+#==================================================================
+Graphics_Enterinsic_3Dplot<-function(mat,pointType="s",pointSize=0.75,lit=F)
+{
+	library(rgl);#引入绘图函数
+	colname=colnames(mat);
+	plot3d(mat[,1],mat[,2],mat[,3],type=pointType,size=pointSize,lit=lit);
+}
